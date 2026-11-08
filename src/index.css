@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Colors */
+  --color-parchment-cream: #faf5e8;
+  --color-pure-white: #ffffff;
+  --color-frost-white: #f8fafc;
+  --color-onyx: #181d26;
+  --color-charcoal: #333840;
+  --color-graphite: #525965;
+  --color-steel: #9297a0;
+  --color-silver-border: #e0e2e6;
+  --color-midnight-indigo: #040e20;
+  --color-cobalt-blue: #1b61c9;
+  --color-sapphire: #254fad;
+  --color-terracotta: #aa2d00;
+  --color-burnt-sienna: #912e1f;
+  --color-peach-glow: #fcab79;
+  --color-forest-ink: #0a2e0e;
+  --color-moss: #214224;
+  --color-petal-pink: #fa91e0;
+  --color-marigold: #fcb42a;
+  --color-pale-sky: #c7e5f2;
+
+  /* Typography — Font Families */
+  --font-haas-groot-disp: 'Roboto Slab', 'Fraunces', Georgia, serif;
+  --font-haas: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  /* Spacing */
+  --spacing-unit: 8px;
+  --page-max-width: 1200px;
+  --section-gap: 64px;
+  --card-padding: 24px;
+  --element-gap: 16px;
+
+  /* Named Radii */
+  --radius-tags: 32px;
+  --radius-cards: 16px;
+  --radius-buttons: 12px;
+  --radius-featurecards: 24px;
+
+  /* Shadows */
+  --shadow-subtle: rgba(0, 0, 0, 0.32) 0px 0px 1px 0px, rgba(0, 0, 0, 0.08) 0px 0px 2px 0px, rgba(45, 127, 249, 0.28) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 0.5px inset;
+  --shadow-lg: rgba(15, 48, 106, 0.05) 0px 0px 20px 0px;
+
+  /* Surfaces */
+  --surface-parchment-canvas: #faf5e8;
+  --surface-white-card: #ffffff;
+  --surface-frost-white: #f8fafc;
+  --surface-pale-sky: #c7e5f2;
+  --surface-onyx-frame: #181d26;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-parchment-cream);
+  color: var(--color-charcoal);
+  font-family: var(--font-haas);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+/* Ergonomics: prevent iOS Safari auto-zoom on input focus */
+input, textarea, select, button {
+  font-size: 16px;
+}
+
+/* Scrollbar aesthetic matching paper workspace */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #faf5e8;
+}
+::-webkit-scrollbar-thumb {
+  background: #e0e2e6;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9297a0;
+}
